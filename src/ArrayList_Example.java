@@ -8,12 +8,16 @@ public class ArrayList_Example
 		String[] words = new String[2];//= {"words", "more"};
 		String[] more = new String[2];//= {"some", "again"};
 		ArrayList<String> str = new ArrayList<String>();
+		String strng;
 		for(int i=0; i<words.length; i++)
 			words[i] = "words" + i;
 		for(int i=0; i<more.length; i++)
 			more[i] = "more" + i;
 		str = merge(words, more);
 		System.out.println(str);
+		
+		strng = makeSentence(words);
+		System.out.println(words);
 		
 	}
 	public static ArrayList<String> merge (String[] words, String[] more)
@@ -25,4 +29,14 @@ public class ArrayList_Example
 			sentence.add(w);
 		return sentence;
 	}
+	
+	//Find Time complexity of below code
+	public static String makeSentence (String[] words)
+	{
+		StringBuffer sentence = new StringBuffer();
+		for (String w : words)
+			sentence.append(w);
+		return sentence.toString();
+	}
+	//Solution : O(n^2)
 }
