@@ -1,13 +1,12 @@
 package LinkedList;
 
-
-public class SinglyLinkedListImplementation 
+public class SinglyLinkedList 
 {
 	protected Node head;
 	protected Node tail;
 	protected long size;
 	
-	public SinglyLinkedListImplementation()
+	public SinglyLinkedList()
 	{
 		head = null;
 		tail = null;
@@ -30,5 +29,4 @@ public class SinglyLinkedListImplementation
 		tail = newNode;
 		size = size + 1;
 	}
-	
 }
