@@ -1,5 +1,6 @@
+package Array;
 
-public class FindUniqueCharsInStr 
+public class Arrays_And_Strings 
 {
 	public static void main(String args[])
 	{
@@ -68,5 +69,7 @@ public class FindUniqueCharsInStr
 		}
 		return true;
 	}
-
+	
+	
+	
 }
