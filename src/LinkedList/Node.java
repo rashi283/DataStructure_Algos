@@ -13,6 +13,9 @@ public class Node
 		next = n;
 	}
 	
+	public Node ()
+	{}
+	
 	//Methods
 	
 	public void setElement(String newElem)

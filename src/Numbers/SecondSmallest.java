@@ -6,9 +6,39 @@ public class SecondSmallest
 	
 	public static void main(String args[])
 	{
-		int[] arr = {6, 1, 7, 8, 2, 4, 5, 3};
-		int val = findSecondSmallest(arr);
+		int[] arr = {6, 9, 7, 8, 1, 4, 5, 2};
+		int val = findSecondSmallestToo(arr);
 		System.out.println("Return value: " + val);
+	}
+	
+	public static int findSecondSmallestToo(int[] arr)
+	{
+		int small, second;
+		if(arr[0] < arr[1])
+		{
+			small = arr[0];
+			second = arr[1];
+		}
+		else
+		{
+			small = arr[1];
+			second = arr[0];
+		}
+		for(int i = 2; i< arr.length; i++)
+		{
+			if(arr[i] < second)
+			{
+				if(arr[i] < small)
+				{
+					second = small;
+					small = arr[i];
+				}
+				else
+					second = arr[i];
+			}	
+		}	
+				
+		return second;
 	}
 	
 	//Check if can be optimized further. One test case doesnt work always.
