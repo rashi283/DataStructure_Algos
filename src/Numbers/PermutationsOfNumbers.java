@@ -13,27 +13,28 @@ public class PermutationsOfNumbers
 	{
 		int[] inArr = {1,2,3};
 		System.out.println("Permutations of " + Arrays.toString(inArr) + " is the following :" );
-		permutations(inArr);
+		//permutations(inArr);
 	}
 	
 	// Still not the best solution.
-	public static int[] permutations(int[] inArr)
-	{
-		int i=0, j=1;
-		List<Integer> opArr = new ArrayList<Integer>();
-		List<Integer> tempArr = new ArrayList<Integer>();
-		
-		System.out.println("[" + inArr[0] + "]");
-		
-		for(i=0;i<inArr.length; i++)
-		{
-			for(j=0; j<inArr.length; j++)
-			{
-				tempArr.add(inArr[i]);
-				tempArr.add(inArr[j]);
-			}	
-		}	
-		System.out.println(tempArr);
-		return inArr;
-	}
+//	public static int[] permutations(int[] inArr)
+//	{
+//		int i=0, j=1;
+//		//List<Integer> opArr = new ArrayList<Integer>();
+//		//List<Integer> tempArr = new ArrayList<Integer>();
+//        tempArr = new ArrayList<Integer>();
+//
+//		System.out.println("[" + inArr[0] + "]");
+//
+//		for(i=0;i<inArr.length; i++)
+//		{
+//			for(j=0; j<inArr.length; j++)
+//			{
+//				tempArr.add(inArr[i]);
+//				tempArr.add(inArr[j]);
+//			}
+//		}
+//		System.out.println(tempArr);
+//		return inArr;
+//	}
 }
